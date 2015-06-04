@@ -1,7 +1,7 @@
 <html>
     <head>
         <script src="bower_components/angular/angular.js"></script>
-        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="bower_components/ui-route/release/angular-ui-router.js"></script>
         <script src="app.js"></script>
         
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
@@ -9,14 +9,14 @@
     <body ng-app="myExpApp">
         <div class="container">
             <div class="row">
-                <div class="col-md-1"><a href="/">Home</a></div>
-                <div class="col-md-1"><a href="#/part1">Part1</a></div>
-                <div class="col-md-1"><a href="#/part2">Part2</a></div>
+                <div class="col-md-1"><a ui-sref="part2State">Home</a></div>
+                <div class="col-md-1"><a ui-sref="part1State">Part1</a></div>
+                <div class="col-md-1"><a ui-sref="part2State({param:33})">Part2</a></div>
             </div>
         </div>
         
         <div class="container">
-            <div ng-view>
+            <div ui-view>
             </div>
         </div>
     </body>
