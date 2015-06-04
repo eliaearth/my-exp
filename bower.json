@@ -1,0 +1,21 @@
+{
+  "name": "my-exp",
+  "version": "0.0.0",
+  "homepage": "https://github.com/eliaearth/my-exp",
+  "authors": [
+    "eliaearth <elia_earth@yahoo.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.4.0",
+    "angular-route": "~1.4.0",
+    "bootstrap": "~3.3.4"
+  }
+}
