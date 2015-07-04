@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <script src="angular.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div ng-controller="controllerParent">
+            <p>*************************controller Parent</p>
+            <p>var <b style="color:blue">rootScope.d</b> = {{d}} </p>
+        </div>
+        <div>
+            <div ng-controller="controllerParent">
+                <p>*************************controller Parent</p>
+                <p>var <b style="color:blue">rootScope.d</b> = {{d}} </p>
+            </div>
+            <div ng-controller="controller1">
+                <p>*************************controller 1</p>
+                <p>var <b style="color:blue">$scope.a</b> = {{a}} </p>
+                <p>var <b style="color:blue">this.b</b> = {{b}} </p>
+                <p>var <b style="color:blue">$scope.c = this.b</b> = {{c}} </p>
+                <p>var <b style="color:blue">rootScope.d</b> = {{d}} </p>
+            </div>
+            <div ng-controller="controller2">
+                <p>************************controller 2</p>
+                <p>var <b style="color:blue">$scope.a</b> = {{a}} </p>
+                <p>var <b style="color:blue">this.b</b> = {{b}} </p>
+                <p>var <b style="color:blue">$scope.c = this.b</b> = {{c}} </p>
+                <p>var <b style="color:blue">rootScope.d</b>= {{d}} </p>
+             </div>
+            <div ng-controller="controllerParent">
+                <p>*************************controller Parent</p>
+                <p>var <b style="color:blue">rootScope.d</b> = {{d}} </p>
+            </div>
+        </div>
+    </body>
+</html>
